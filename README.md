@@ -48,7 +48,7 @@ Expand directions:
 - bottom-left
 - bottom-center
 - bottom-right
-- 
+
 ##### Example
 ```javascript
 expandObject.enable('myElement', 930, 180, 0, 930, 400, 0, !1, 'bottom', 1);
