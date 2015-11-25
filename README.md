@@ -33,6 +33,10 @@ Your chosen element ID must contain the following HTML structure example, but el
 | expandDirection   | string            | Expand Direction      |
 | expandSmooth      | boolean           | Expand Transition     |
 
+```javascript
+flashObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
+```
+
 Expand directions:
 
 - top
@@ -44,11 +48,7 @@ Expand directions:
 - bottom-left
 - bottom-center
 - bottom-right
-
-```javascript
-flashObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
-```
-
+- 
 ##### Example
 ```javascript
 expandObject.enable('myElement', 930, 180, 0, 930, 400, 0, !1, 'bottom', 1);
