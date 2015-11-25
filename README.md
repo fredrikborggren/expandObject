@@ -20,20 +20,29 @@ Your chosen element ID must contain the following HTML structure example, but el
 
 ##### Method
 
-| Argument Name     | Argument Type     | Argument Description  | Argument Options      |
-| :---------------: | :---------------: | :-------------------: | :-------------------: |
-| elementId         | string            | Appending Element ID  |                       |
-| collapseWidth     | integer           | Collapse Width        |                       |
-| collapseHeight    | integer           | Collapse Height       |                       |
-| collapseDelay     | integer           | Collapse Delay (secs) |                       |
-| expandWidth       | integer           | Expanded Width        |                       |
-| expandHeight      | integer           | Expanded Height       |                       |
-| expandDelay       | integer           | Expanded Delay (secs) |                       |
-| pushDown          | boolean           | Push Down             |                       |
-| expandDirection   | string            | Expand Direction      | top, top-left, top-center, top-right, center, bottom-left, bottom-center, bottom-right |
-| expandSmooth      | boolean           | Expand Transition     | true / false          |
+| Argument Name     | Argument Type     | Argument Description  |
+| :---------------: | :---------------: | :-------------------: |
+| elementId         | string            | Appending Element ID  |
+| collapseWidth     | integer           | Collapse Width        |
+| collapseHeight    | integer           | Collapse Height       |
+| collapseDelay     | integer           | Collapse Delay (secs) |
+| expandWidth       | integer           | Expanded Width        |
+| expandHeight      | integer           | Expanded Height       |
+| expandDelay       | integer           | Expanded Delay (secs) |
+| pushDown          | boolean           | Push Down             |
+| expandDirection   | string            | Expand Direction      |
+| expandSmooth      | boolean           | Expand Transition     |
 
+Expand directions:
 
+- top
+- top-left
+- top-center
+- top-right
+- center
+- bottom-left
+- bottom-center
+- bottom-right
 
 ```javascript
 flashObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
