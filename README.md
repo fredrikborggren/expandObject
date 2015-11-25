@@ -40,6 +40,7 @@ Expand directions:
 - top-center
 - top-right
 - center
+- bottom
 - bottom-left
 - bottom-center
 - bottom-right
