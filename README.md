@@ -62,6 +62,7 @@ expandObject.enable('elementId', 930, 180, 0, 930, 400, 0, 1, 'bottom', 1);
 
 ## History
 
+* __1.0.1__ : Added support for DAC
 * __1.0.0__ : Initial build
 
 ## Dependencies
