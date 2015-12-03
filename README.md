@@ -1,40 +1,23 @@
-# expandObject
+# flashObject
 
-Lightweight flash/image embed solution!
+A lightweight expandable advert solution
 
-## Expand-/collapseable
+## Installation
 
-##### HTML Requirement
+Choose the *one* of the following that works best for you:
 
-Your chosen element ID must contain the following HTML structure example, but element ID's and classnames are not important nor required-
-
-```html
-<div id="myElement">
-    <div id="myElement_outer">
-        <div id="myElement_inner">
-            <div id="myElement_main"></div>
-        </div>
-    </div>
-</div>
+- Include expandobject.min.js into HTML
+    ```html
+<script type="text/javascript" src="expandobject.min.js"></script>
 ```
 
-##### Method
+- Embed expandobject.min.js into JavaScript
 
-| Argument Name     | Argument Type     | Argument Description  |
-| :---------------: | :---------------: | :-------------------: |
-| elementId         | string            | Appending Element ID  |
-| collapseWidth     | integer           | Collapse Width        |
-| collapseHeight    | integer           | Collapse Height       |
-| collapseDelay     | integer           | Collapse Delay (secs) |
-| expandWidth       | integer           | Expanded Width        |
-| expandHeight      | integer           | Expanded Height       |
-| expandDelay       | integer           | Expanded Delay (secs) |
-| pushDown          | boolean           | Push Down             |
-| expandDirection   | string            | Expand Direction      |
-| expandSmooth      | boolean           | Expand Transition     |
+## Usage
 
+Enable Expanding
 ```javascript
-flashObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
+expandObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
 ```
 
 Expand directions:
@@ -43,20 +26,43 @@ Expand directions:
 - top-left
 - top-center
 - top-right
+- left
 - center
+- right
 - bottom
 - bottom-left
 - bottom-center
 - bottom-right
 
-##### Example
-```javascript
-expandObject.enable('myElement', 930, 180, 0, 930, 400, 0, !1, 'bottom', 1);
+Required HTML setup to work
+```html
+<div id="elementId">
+    <div id="elementId_outer">
+        <div id="elementId_inner">
+            <div id="elementIdpolite"></div>
+            <div id="elementId_main"></div>
+        </div>
+    </div>
+</div>
 ```
 
-## Requirements
+Basic expandable from 930x180 to 930x400
+```javascript
+expandObject.enable('elementId', 930, 180, 0, 930, 400, 0, !1, 'bottom', !1);
+```
 
-No known dependencies known so far. Found one? Let me know!
+Advanced expandable from 930x180 to 930x400 with `push down` and `transitioning` enabled
+```javascript
+expandObject.enable('elementId', 930, 180, 0, 930, 400, 0, 1, 'bottom', 1);
+```
+
+## History
+
+* __1.0.0__ : Initial build
+
+## Dependencies
+
+None
 
 ## License
 
