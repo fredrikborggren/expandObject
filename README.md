@@ -15,13 +15,19 @@ Choose the *one* of the following that works best for you:
 
 ## Usage
 
-Enable Expanding
-```javascript
-expandObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
+Required HTML setup to work
+```html
+<div id="elementId">
+    <div id="elementId_outer">
+        <div id="elementId_inner">
+            <div id="elementIdpolite"></div>
+            <div id="elementId_main"></div>
+        </div>
+    </div>
+</div>
 ```
 
 Expand directions:
-
 - top
 - top-left
 - top-center
@@ -34,16 +40,9 @@ Expand directions:
 - bottom-center
 - bottom-right
 
-Required HTML setup to work
-```html
-<div id="elementId">
-    <div id="elementId_outer">
-        <div id="elementId_inner">
-            <div id="elementIdpolite"></div>
-            <div id="elementId_main"></div>
-        </div>
-    </div>
-</div>
+Enable Expanding
+```javascript
+expandObject.enable(elementId, collapseWidth, collapseHeight, collapseDelay, expandWidth, expandHeight, expandDelay, pushDown, expandDirection, expandSmooth);
 ```
 
 Basic expandable from 930x180 to 930x400
