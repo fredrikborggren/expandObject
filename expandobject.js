@@ -82,10 +82,6 @@
             holderElement.style.height = collapseHeight + "px";
             outerElement.style.width = collapseWidth + "px";
             outerElement.style.height = collapseHeight + "px";
-            if (global === window.parent) {
-                window.frameElement.style.width = collapseWidth + "px";
-                window.frameElement.style.height = collapseHeight + "px";
-            }
         }
 
         /**
@@ -107,10 +103,6 @@
             holderElement.style.height = (pushDown ? expandHeight : collapseHeight) + "px";
             outerElement.style.width = expandWidth + "px";
             outerElement.style.height = expandHeight + "px";
-            if (global === window.parent) {
-                window.frameElement.style.width = expandWidth + "px";
-                window.frameElement.style.height = expandHeight + "px";
-            }
         }
 
         return {
